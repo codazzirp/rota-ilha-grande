@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conheça passeios de barco e opções de travessia para Ilha Grande. Consulte informações e atendimento pelo WhatsApp.">
+  <meta name="theme-color" content="#073b3a">
+  <title>Rota Ilha Grande | Passeios e Travessias</title>
+  <style>
+    :root { --deep:#073b3a; --green:#0b6658; --sand:#e9bd78; --ink:#183333; --muted:#617575; --paper:#f7f8f4; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; font-family:Arial, Helvetica, sans-serif; color:var(--ink); background:var(--paper); line-height:1.55; }
+    a { color:inherit; }
+    .wrap { width:min(1100px, 92%); margin:auto; }
+    header { position:absolute; top:0; left:0; right:0; z-index:2; color:white; }
+    nav { display:flex; align-items:center; justify-content:space-between; gap:20px; padding:22px 0; }
+    .brand { font-weight:800; letter-spacing:.4px; font-size:1.18rem; }
+    .brand span { color:var(--sand); }
+    .navlinks { display:flex; gap:22px; font-size:.93rem; }
+    .navlinks a { text-decoration:none; opacity:.95; }
+    .hero { min-height:650px; display:flex; align-items:center; color:white; background:
+      linear-gradient(90deg, rgba(3,35,35,.82), rgba(3,35,35,.35)),
+      url('https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=2000&q=85') center/cover; }
+    .hero-content { max-width:650px; padding:130px 0 80px; }
+    .eyebrow { color:var(--sand); font-weight:700; text-transform:uppercase; letter-spacing:2px; font-size:.78rem; }
+    h1 { font-size:clamp(2.5rem, 6vw, 4.8rem); line-height:1.03; margin:15px 0 20px; }
+    .hero p { font-size:1.12rem; max-width:560px; color:#edf5f1; }
+    .actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:28px; }
+    .btn { display:inline-block; border-radius:999px; padding:14px 22px; font-weight:700; text-decoration:none; transition:.2s; }
+    .btn-primary { background:#20a66a; color:white; }
+    .btn-primary:hover { background:#168653; transform:translateY(-1px); }
+    .btn-outline { border:1px solid rgba(255,255,255,.7); color:white; }
+    section { padding:76px 0; }
+    .section-head { max-width:680px; margin-bottom:32px; }
+    .section-head h2 { font-size:clamp(1.9rem,4vw,2.8rem); line-height:1.1; margin:8px 0 12px; color:var(--deep); }
+    .section-head p { color:var(--muted); margin:0; }
+    .cards { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+    .card { background:white; border-radius:18px; overflow:hidden; box-shadow:0 8px 30px rgba(7,59,58,.08); }
+    .card-image { height:190px; background:#d7e5df center/cover; }
+    .card-body { padding:22px; }
+    .card h3 { margin:0 0 8px; color:var(--deep); font-size:1.25rem; }
+    .card p { color:var(--muted); margin:0 0 18px; }
+    .card a { color:var(--green); font-weight:700; text-decoration:none; }
+    .band { background:var(--deep); color:white; }
+    .band .section-head h2 { color:white; }
+    .band .section-head p { color:#d0e1db; }
+    .steps { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
+    .step { border:1px solid rgba(255,255,255,.2); border-radius:16px; padding:22px; }
+    .step b { color:var(--sand); font-size:1.4rem; }
+    .step h3 { margin:8px 0; }
+    .step p { color:#d0e1db; margin:0; }
+    .faq { max-width:760px; }
+    details { padding:18px 0; border-bottom:1px solid #d9e2dc; }
+    summary { cursor:pointer; font-weight:700; color:var(--deep); }
+    details p { color:var(--muted); margin-bottom:0; }
+    .contact { background:#eaf1eb; text-align:center; }
+    .contact h2 { color:var(--deep); font-size:clamp(2rem,4vw,3rem); margin:8px 0; }
+    .contact p { color:var(--muted); max-width:620px; margin:0 auto 24px; }
+    footer { background:#052d2d; color:#d6e5df; padding:26px 0; font-size:.9rem; }
+    footer .wrap { display:flex; justify-content:space-between; gap:18px; flex-wrap:wrap; }
+    .note { font-size:.82rem; color:#8ca19a; margin-top:12px; }
+    @media(max-width:760px) {
+      .navlinks { gap:12px; font-size:.82rem; }
+      .cards,.steps { grid-template-columns:1fr; }
+      .hero { min-height:610px; }
+      section { padding:58px 0; }
+    }
+    @media(max-width:430px) {
+      nav { align-items:flex-start; flex-direction:column; gap:10px; }
+      .navlinks { flex-wrap:wrap; }
+      .hero-content { padding-top:155px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <nav>
+        <div class="brand">ROTA <span>ILHA GRANDE</span></div>
+        <div class="navlinks">
+          <a href="#passeios">Passeios</a>
+          <a href="#travessia">Travessia</a>
+          <a href="#duvidas">Dúvidas</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <div class="hero-content">
+          <div class="eyebrow">Seu próximo destino é aqui</div>
+          <h1>Descubra as belezas de Ilha Grande.</h1>
+          <p>Encontre passeios de barco, conheça praias incríveis e consulte opções de travessia. Tire suas dúvidas e planeje sua experiência pelo WhatsApp.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="https://wa.me/5521988479490?text=Ol%C3%A1!%20Vim%20pelo%20site%20Rota%20Ilha%20Grande%20e%20quero%20informa%C3%A7%C3%B5es%20sobre%20os%20passeios." target="_blank" rel="noopener">Consultar passeios no WhatsApp</a>
+            <a class="btn btn-outline" href="#passeios">Conhecer opções</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="passeios">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow" style="color:var(--green)">Explore a região</div>
+          <h2>Escolha como viver Ilha Grande</h2>
+          <p>Veja algumas das experiências que você pode consultar. Roteiros, valores, datas e disponibilidade são confirmados diretamente pelo atendimento.</p>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <div class="card-image" role="img" aria-label="Barco navegando em mar tropical" style="background-image:url('https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=900&q=80')"></div>
+            <div class="card-body">
+              <h3>Passeios de barco</h3>
+              <p>Conheça opções de roteiros para explorar praias, ilhas e águas cristalinas.</p>
+              <a href="https://wa.me/5521988479490?text=Ol%C3%A1!%20Quero%20saber%20sobre%20os%20passeios%20de%20barco%20em%20Ilha%20Grande." target="_blank" rel="noopener">Consultar pelo WhatsApp →</a>
+            </div>
+          </article>
+          <article class="card" id="travessia">
+            <div class="card-image" role="img" aria-label="Embarcação no mar" style="background-image:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80')"></div>
+            <div class="card-body">
+              <h3>Travessias</h3>
+              <p>Consulte opções de embarque, horários, valores e orientações para sua viagem.</p>
+              <a href="https://wa.me/5521988479490?text=Ol%C3%A1!%20Quero%20informa%C3%A7%C3%B5es%20sobre%20a%20travessia%20para%20Ilha%20Grande." target="_blank" rel="noopener">Consultar pelo WhatsApp →</a>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-image" role="img" aria-label="Praia tropical com água azul" style="background-image:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80')"></div>
+            <div class="card-body">
+              <h3>Monte seu roteiro</h3>
+              <p>Conte quando pretende viajar e o que gostaria de conhecer. Vamos ajudar você a encontrar uma opção.</p>
+              <a href="https://wa.me/5521988479490?text=Ol%C3%A1!%20Quero%20ajuda%20para%20montar%20meu%20roteiro%20em%20Ilha%20Grande." target="_blank" rel="noopener">Conversar com atendimento →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow">Planeje com tranquilidade</div>
+          <h2>Como consultar e reservar</h2>
+          <p>Um atendimento simples para você tirar dúvidas antes de decidir.</p>
+        </div>
+        <div class="steps">
+          <div class="step"><b>01</b><h3>Escolha o que procura</h3><p>Passeio de barco, travessia ou ajuda para montar seu roteiro.</p></div>
+          <div class="step"><b>02</b><h3>Chame no WhatsApp</h3><p>Informe a data, quantidade de pessoas e a experiência desejada.</p></div>
+          <div class="step"><b>03</b><h3>Confirme os detalhes</h3><p>Consulte valores, horários, disponibilidade e condições antes de fechar.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="duvidas">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow" style="color:var(--green)">Informações úteis</div>
+          <h2>Dúvidas frequentes</h2>
+        </div>
+        <div class="faq">
+          <details><summary>Como consulto os valores dos passeios?</summary><p>Envie uma mensagem pelo WhatsApp informando a data desejada e o número de pessoas para receber as opções e os valores atualizados.</p></details>
+          <details><summary>Os passeios acontecem todos os dias?</summary><p>A realização depende de agenda, disponibilidade e condições de navegação. Consulte antes de se programar.</p></details>
+          <details><summary>Como confirmo uma travessia?</summary><p>Entre em contato para verificar horários, local de embarque, valores e regras válidas para a data da sua viagem.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="wrap">
+        <div class="eyebrow" style="color:var(--green)">Vamos planejar sua viagem?</div>
+        <h2>Ilha Grande espera por você.</h2>
+        <p>Fale pelo WhatsApp para consultar passeios, travessias, valores e disponibilidade.</p>
+        <a class="btn btn-primary" href="https://wa.me/5521988479490?text=Ol%C3%A1!%20Vim%20pelo%20site%20Rota%20Ilha%20Grande." target="_blank" rel="noopener">Falar pelo WhatsApp</a>
+        <div class="note">Atendimento independente de consulta. A reserva só estará confirmada após validação dos detalhes e condições com o atendimento.</div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div><strong>ROTA ILHA GRANDE</strong><br>Informações sobre passeios e travessias.</div>
+      <div>© <span id="year"></span> Rota Ilha Grande</div>
+    </div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
