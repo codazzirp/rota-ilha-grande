@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Conheça passeios de barco e opções de travessia para Ilha Grande. Consulte informações e atendimento pelo WhatsApp.">
+  <meta name="description" content="Conheça Ilha Grande: Lagoa Azul, Lagoa Verde, Lopes Mendes, Aventureiro, passeios de barco e opções de travessia. Consulte pelo WhatsApp.">
   <meta name="theme-color" content="#073b3a">
   <title>Rota Ilha Grande | Passeios e Travessias</title>
   <style>
@@ -21,7 +21,7 @@
     .navlinks a { text-decoration:none; opacity:.95; }
     .hero { min-height:650px; display:flex; align-items:center; color:white; background:
       linear-gradient(90deg, rgba(3,35,35,.82), rgba(3,35,35,.35)),
-      url('https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=2000&q=85') center/cover; }
+      url('https://commons.wikimedia.org/wiki/Special:FilePath/Lagoa_Azul,_Ilha_Grande.jpg') center/cover; }
     .hero-content { max-width:650px; padding:130px 0 80px; }
     .eyebrow { color:var(--sand); font-weight:700; text-transform:uppercase; letter-spacing:2px; font-size:.78rem; }
     h1 { font-size:clamp(2.5rem, 6vw, 4.8rem); line-height:1.03; margin:15px 0 20px; }
@@ -42,6 +42,15 @@
     .card h3 { margin:0 0 8px; color:var(--deep); font-size:1.25rem; }
     .card p { color:var(--muted); margin:0 0 18px; }
     .card a { color:var(--green); font-weight:700; text-decoration:none; }
+    .destinations { background:#eef3ee; }
+    .destination-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:22px; }
+    .destination { background:white; border-radius:18px; overflow:hidden; box-shadow:0 8px 28px rgba(7,59,58,.08); }
+    .destination img { display:block; width:100%; height:270px; object-fit:cover; }
+    .destination-body { padding:20px 22px; }
+    .destination h3 { margin:0 0 7px; color:var(--deep); font-size:1.35rem; }
+    .destination p { color:var(--muted); margin:0 0 12px; }
+    .photo-credit { display:block; color:#71817d; font-size:.72rem; line-height:1.45; }
+    .photo-credit a { color:var(--green); font-weight:600; }
     .band { background:var(--deep); color:white; }
     .band .section-head h2 { color:white; }
     .band .section-head p { color:#d0e1db; }
@@ -62,9 +71,10 @@
     .note { font-size:.82rem; color:#8ca19a; margin-top:12px; }
     @media(max-width:760px) {
       .navlinks { gap:12px; font-size:.82rem; }
-      .cards,.steps { grid-template-columns:1fr; }
+      .cards,.steps,.destination-grid { grid-template-columns:1fr; }
       .hero { min-height:610px; }
       section { padding:58px 0; }
+      .destination img { height:230px; }
     }
     @media(max-width:430px) {
       nav { align-items:flex-start; flex-direction:column; gap:10px; }
@@ -80,6 +90,7 @@
         <div class="brand">ROTA <span>ILHA GRANDE</span></div>
         <div class="navlinks">
           <a href="#passeios">Passeios</a>
+          <a href="#destinos">Destinos</a>
           <a href="#travessia">Travessia</a>
           <a href="#duvidas">Dúvidas</a>
         </div>
@@ -111,7 +122,7 @@
         </div>
         <div class="cards">
           <article class="card">
-            <div class="card-image" role="img" aria-label="Barco navegando em mar tropical" style="background-image:url('https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=900&q=80')"></div>
+            <div class="card-image" role="img" aria-label="Lagoa Azul em Ilha Grande" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Lagoa_Azul,_Ilha_Grande.jpg')"></div>
             <div class="card-body">
               <h3>Passeios de barco</h3>
               <p>Conheça opções de roteiros para explorar praias, ilhas e águas cristalinas.</p>
@@ -119,7 +130,7 @@
             </div>
           </article>
           <article class="card" id="travessia">
-            <div class="card-image" role="img" aria-label="Embarcação no mar" style="background-image:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80')"></div>
+            <div class="card-image" role="img" aria-label="Lagoa Verde em Ilha Grande" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Lagoa_Verde_em_Ilha_Grande-RJ-Brasil_(1376956558).jpg')"></div>
             <div class="card-body">
               <h3>Travessias</h3>
               <p>Consulte opções de embarque, horários, valores e orientações para sua viagem.</p>
@@ -127,12 +138,40 @@
             </div>
           </article>
           <article class="card">
-            <div class="card-image" role="img" aria-label="Praia tropical com água azul" style="background-image:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80')"></div>
+            <div class="card-image" role="img" aria-label="Praia de Lopes Mendes em Ilha Grande" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Praia_de_Lopes_Mendes_em_Ilha_Grande_RJ.jpg')"></div>
             <div class="card-body">
               <h3>Monte seu roteiro</h3>
               <p>Conte quando pretende viajar e o que gostaria de conhecer. Vamos ajudar você a encontrar uma opção.</p>
               <a href="https://wa.me/5521988479490?text=Ol%C3%A1!%20Quero%20ajuda%20para%20montar%20meu%20roteiro%20em%20Ilha%20Grande." target="_blank" rel="noopener">Conversar com atendimento →</a>
             </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="destinations" id="destinos">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow" style="color:var(--green)">Cartões-postais da ilha</div>
+          <h2>Lugares que fazem Ilha Grande inesquecível</h2>
+          <p>Conheça alguns dos destinos mais conhecidos da região. Consulte pelo WhatsApp as opções de passeio e como chegar a cada lugar.</p>
+        </div>
+        <div class="destination-grid">
+          <article class="destination">
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Lagoa_Azul,_Ilha_Grande.jpg" alt="Lagoa Azul, em Ilha Grande" loading="lazy">
+            <div class="destination-body"><h3>Lagoa Azul</h3><p>Um cenário de águas claras, perfeito para contemplar a beleza do mar e aproveitar o passeio.</p><small class="photo-credit">Foto: Ana Carolina do Nascimento Guimarães · <a href="https://commons.wikimedia.org/wiki/File:Lagoa_Azul,_Ilha_Grande.jpg" target="_blank" rel="noopener">Origem da foto</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener">CC BY-SA 3.0</a>.</small></div>
+          </article>
+          <article class="destination">
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Lagoa_Verde_em_Ilha_Grande-RJ-Brasil_(1376956558).jpg" alt="Lagoa Verde, em Ilha Grande" loading="lazy">
+            <div class="destination-body"><h3>Lagoa Verde</h3><p>Um recanto de águas esverdeadas e natureza exuberante na costa da ilha.</p><small class="photo-credit">Foto: Glauco Umbelino · <a href="https://commons.wikimedia.org/wiki/File:Lagoa_Verde_em_Ilha_Grande-RJ-Brasil_(1376956558).jpg" target="_blank" rel="noopener">Origem da foto</a> · <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener">CC BY 2.0</a>.</small></div>
+          </article>
+          <article class="destination">
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Praia_de_Lopes_Mendes_em_Ilha_Grande_RJ.jpg" alt="Praia de Lopes Mendes, em Ilha Grande" loading="lazy">
+            <div class="destination-body"><h3>Lopes Mendes</h3><p>Uma das praias mais famosas da ilha, conhecida pela extensa faixa de areia clara e mar aberto.</p><small class="photo-credit">Foto: Cibele Brugnera · <a href="https://commons.wikimedia.org/wiki/File:Praia_de_Lopes_Mendes_em_Ilha_Grande_RJ.jpg" target="_blank" rel="noopener">Origem da foto</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>.</small></div>
+          </article>
+          <article class="destination">
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Praia_do_Aventureiro_em_Ilha_Grande.jpg" alt="Praia do Aventureiro, em Ilha Grande" loading="lazy">
+            <div class="destination-body"><h3>Aventureiro</h3><p>Praia conhecida pelo coqueiro deitado e pelo visual preservado de mar e montanhas.</p><small class="photo-credit">Foto: Paulodcwiki · <a href="https://commons.wikimedia.org/wiki/File:Praia_do_Aventureiro_em_Ilha_Grande.jpg" target="_blank" rel="noopener">Origem da foto</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener">CC BY-SA 3.0</a>.</small></div>
           </article>
         </div>
       </div>
