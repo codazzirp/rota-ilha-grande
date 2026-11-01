@@ -42,6 +42,18 @@
     .card h3 { margin:0 0 8px; color:var(--deep); font-size:1.25rem; }
     .card p { color:var(--muted); margin:0 0 18px; }
     .card a { color:var(--green); font-weight:700; text-decoration:none; }
+    .tour-feature { background:#fff; }
+    .tour-layout { display:grid; grid-template-columns:1.05fr .95fr; gap:28px; align-items:stretch; }
+    .tour-photo { min-height:430px; border-radius:20px; background:linear-gradient(180deg,rgba(3,35,35,.05),rgba(3,35,35,.15)),url('https://commons.wikimedia.org/wiki/Special:FilePath/Lagoa_Azul,_Ilha_Grande.jpg') center/cover; }
+    .tour-panel { background:#eef3ee; border-radius:20px; padding:28px; }
+    .tour-facts { display:flex; flex-wrap:wrap; gap:10px; margin:18px 0 22px; }
+    .tour-facts span { background:white; border-radius:999px; padding:8px 13px; color:var(--deep); font-size:.9rem; font-weight:700; }
+    .tour-panel h3 { color:var(--deep); margin:0 0 12px; }
+    .tour-route { list-style:none; padding:0; margin:0 0 22px; }
+    .tour-route li { position:relative; padding:0 0 14px 25px; color:var(--muted); }
+    .tour-route li::before { content:''; position:absolute; left:2px; top:8px; width:9px; height:9px; border-radius:50%; background:var(--green); }
+    .tour-route li:not(:last-child)::after { content:''; position:absolute; left:6px; top:20px; bottom:0; width:1px; background:#b8ccc2; }
+    .tour-note { font-size:.86rem; color:var(--muted); margin:14px 0 0; }
     .destinations { background:#eef3ee; }
     .destination-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:22px; }
     .destination { background:white; border-radius:18px; overflow:hidden; box-shadow:0 8px 28px rgba(7,59,58,.08); }
@@ -71,7 +83,8 @@
     .note { font-size:.82rem; color:#8ca19a; margin-top:12px; }
     @media(max-width:760px) {
       .navlinks { gap:12px; font-size:.82rem; }
-      .cards,.steps,.destination-grid { grid-template-columns:1fr; }
+      .cards,.steps,.destination-grid,.tour-layout { grid-template-columns:1fr; }
+      .tour-photo { min-height:260px; }
       .hero { min-height:610px; }
       section { padding:58px 0; }
       .destination img { height:230px; }
@@ -90,6 +103,7 @@
         <div class="brand">ROTA <span>ILHA GRANDE</span></div>
         <div class="navlinks">
           <a href="#passeios">Passeios</a>
+          <a href="#ilhas-paradisiacas">Ilhas Paradisíacas</a>
           <a href="#destinos">Destinos</a>
           <a href="#travessia">Travessia</a>
           <a href="#duvidas">Dúvidas</a>
@@ -145,6 +159,32 @@
               <a href="https://wa.me/5521988479490?text=Ol%C3%A1!%20Quero%20ajuda%20para%20montar%20meu%20roteiro%20em%20Ilha%20Grande." target="_blank" rel="noopener">Conversar com atendimento →</a>
             </div>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="tour-feature" id="ilhas-paradisiacas">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow" style="color:var(--green)">Experiência em destaque</div>
+          <h2>Passeio de barco: Ilhas Paradisíacas</h2>
+          <p>Um dia para conhecer praias, ilhas e cenários famosos da região de Angra dos Reis e Ilha Grande.</p>
+        </div>
+        <div class="tour-layout">
+          <div class="tour-photo" role="img" aria-label="Águas claras da Lagoa Azul, em Ilha Grande"></div>
+          <div class="tour-panel">
+            <div class="tour-facts"><span>⏱ Aproximadamente 7 horas</span><span>🧊 Cooler com gelo</span><span>💧 Água natural</span></div>
+            <h3>Roteiro previsto</h3>
+            <ul class="tour-route">
+              <li>Praia do Dentista</li>
+              <li>Ilhas Botinas</li>
+              <li>Praia da Piedade</li>
+              <li>Ilha de Cataguases</li>
+            </ul>
+            <p style="color:var(--muted);margin:0 0 18px">As paradas costumam ter cerca de 40 minutos a 1 hora, conforme a programação e as condições do passeio.</p>
+            <a class="btn btn-primary" href="https://wa.me/5521988479490?text=Ol%C3%A1!%20Tenho%20interesse%20no%20passeio%20Ilhas%20Paradis%C3%ADacas.%20Pode%20me%20informar%20valores%2C%20datas%20e%20disponibilidade%3F" target="_blank" rel="noopener">Consultar valores e disponibilidade</a>
+            <p class="tour-note">Roteiro, horários, valores, itens inclusos e realização estão sujeitos à confirmação no atendimento e às condições de navegação.</p>
+          </div>
         </div>
       </div>
     </section>
